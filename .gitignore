@@ -1,0 +1,23 @@
+# Ignorar as pastas de dados (Não subir dados para o GitHub)
+data/bronze/*
+data/silver/*
+data/gold/*
+!data/**/.gitkeep
+
+# Ignorar logs do Airflow e arquivos temporários
+logs/
+plugins/
+*.log
+_temporary/
+
+# Ignorar cache do Python e Spark
+__pycache__/
+*.pyc
+.pytest_cache/
+spark-warehouse/
+derby.log
+metastore_db/
+
+# Ignorar configurações do VS Code e variáveis de ambiente
+.vscode/
+.env
