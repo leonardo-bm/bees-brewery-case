@@ -43,6 +43,8 @@ docker compose up -d
 * Unpause the DAG (toggle the switch to blue) and click **Trigger DAG** (the play button).
 * Watch the tasks execute sequentially (Bronze -> Silver -> Gold).
 
+![Airflow Pipeline Success](airflow_pipeline.png)
+
 ### 3. Check the Output
 Once the DAG succeeds, the processed files will be available in the `data/` directory mapped to your local machine:
 * `data/bronze/`: Raw JSON data.
